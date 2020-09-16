@@ -74,6 +74,7 @@ function resetMe() {
     sCharUsed = "";
     songChoice = "";
     songHidden = "";
+    document.getElementById("finalGuess").value="";
 
     // Show and hide appropriate HTML elements
     document.getElementById("btnPlayGame").style.display = "block";
