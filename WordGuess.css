@@ -1,0 +1,78 @@
+/* Set bg img */
+body {
+    background-image: url("bgimg.jpg");
+    background-position: center;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin: auto;
+}
+
+/* Create title for both html pages (since both are linked to this css file and I put the class in both) */
+.title {
+    font-size: 150px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    margin: -30px -30px -6px -30px;
+    padding-top: 30px;
+    font-weight: lighter;
+}
+
+/* Create high scores heading */
+.highscore {
+    font-size: 60px;
+    letter-spacing: 20px;
+    text-transform: lowercase;
+    color: white;
+    background-color: goldenrod;
+    padding: 0px 0px 10px 0px;
+    margin: 0px 0px 0px 0px;
+    z-index: 0;
+    font-weight: lighter;
+}
+
+/* Create center block for all html/js text */
+.play {
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    margin-top: -6px;
+    padding-top: 20px;
+    border: solid 6px black;
+    height: 1000px;
+    z-index: -1;
+}
+
+/* Center stubborn fieldsets */
+fieldset {
+    display: block;
+    margin: auto;
+}
+
+/* Center stubborn buttons */
+#btnPlayGame {
+    display: block;
+    margin: auto;
+}
+
+
+#btnPlayAgainSame {
+    display: block;
+    margin: auto;
+}
+
+#btnPlayAgainDiff {
+    display: block;
+    margin: auto;
+}
+
+em {
+    font-size: 10px;
+}
+
+#displayTitleName {
+    font-size: 20px;
+}

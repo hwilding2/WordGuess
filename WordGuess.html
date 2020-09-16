@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="WordGuess.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <script src='WordGuess.js'></script>
+</head>
+
+<!-- Author: Haven Wilding -->
+<!-- This program will:
+    (a) create a Contestant from user input
+    (b) create a song title guessing game
+    (c) allow users to make guesses by inputting letters
+    (d) check those guesses against the predetermined song title
+    (e) keep track of guesses and games played
+    (f) ultimately show results of all contestants who played the game-->
+<body>
+    <h1 class="title">WordGuess</h1>
+    <div class="play">
+        <input type="button" value="Play Game" id="btnPlayGame" onclick="return playGame()">
+        <br>
+        <input type="button" id="btnPlayAgainSame" value="Play Again with SAME user?" onclick="return sameUser()" hidden>
+        <br>
+        <input type="button" id="btnPlayAgainDiff" value="Play Again with DIFFERENT user?" onclick="return playGame()" hidden>
+        <br>
+        <p id="displayTitleName" hidden></p>
+        <p id="titleNote" hidden>NOTE: Spaces have been removed from the song title</p>
+        <br><br>
+        <fieldset  id="fsAvailable" hidden style="width:0px">
+            <legend><strong><em>Available Characters:</em></strong></legend>
+                <p id="availableChars"></p>
+        </fieldset>
+        <br><br>
+        <fieldset id="fsUsed" hidden style="width:0px">
+            <legend><strong><em>Used Characters:</em></strong></legend>
+            <p id="usedChars"></p>
+        </fieldset>
+        <br><br>
+        <fieldset id="fsPlay" hidden style="width:0px">
+            <label for="input">Enter Character:</label>
+            <input type="text" id="inputLetter" maxlength="1">
+            <br><br>
+            <input type="button" id="btnGuess" value="Submit Character" onclick="return guessLetter()">
+            <br><br>
+            <p><strong>OR</strong></p>
+            <br><br>
+            <label for="finalGuess">Enter Your Final Guess:</label>
+            <input type="text" id="finalGuess">
+            <em>NOTE:But if you guess wrong, 26 will be added to your guess count</em>
+            <br><br>
+            <input type="button" id="btnFinalGuess" value="Final Guess" onclick="return guessTitle()">
+            <br><br>
+        </fieldset>
+        <br><br>
+        <input type="button" id="btnShowGames" value="Show Games" onclick="return showGames()">
+        <br><br>
+        <input type="button" id="btnResetForm" value="Reset Form" onclick="return resetMe()">    
+    </div>
+</body>
+
+</html>
